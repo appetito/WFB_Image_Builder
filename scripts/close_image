@@ -4,7 +4,18 @@ LOOP=$1
 
 # Unmount the partitions
 if [ ! -z "${LOOP}" ]; then
-    umount ${LOOP}p1
-    umount ${LOOP}p2
+	echo "SLEEP umount ${LOOP}"
+	while ! umount ${LOOP}p1
+	do
+	  sleep 2
+	  echo "Repeat ${LOOP} p1"
+	done
+	while ! umount ${LOOP}p2
+	do
+	  sleep 2
+	  echo "Repeat ${LOOP} p2"
+	done
+    # umount ${LOOP}p1
+    # umount ${LOOP}p2
     losetup -d ${LOOP}
 fi

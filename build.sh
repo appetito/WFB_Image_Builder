@@ -13,7 +13,7 @@ fi
 . config
 
 # Create a build log file
-BUILD_LOG=Open.HD-NG_`date +"%G-%m-%d_%T"`.log
+BUILD_LOG=LA_WFB_`date +"%G-%m-%d_%T"`.log
 
 # Download the image of necessary
 ${BUILD_ROOT}/scripts/download_image | tee ${BUILD_LOG}

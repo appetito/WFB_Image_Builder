@@ -3,7 +3,7 @@
 export BUILD_ROOT=${BUILD_ROOT:-$PWD}
 
 # Output image name
-export IMG_NAME=Open.HD-NG
+export IMG_NAME=LA_WFB
 
 # The size that the image is resized to prior to installation
 # This needs to be large enough for temporary files, etc
@@ -22,7 +22,7 @@ export BASE_IMAGE="2020-02-13-raspbian-buster-lite"
 exportJ_CORES=4
 
 # The output image name
-export IMAGE_NAME=Open.HD-NG_`date +"%G-%m-%d"`.img
+export IMAGE_NAME=LA_WFB_`date +"%G-%m-%d"`.img
 
 export OPENHD_REPO=https://github.com/HD-Fpv/Open.HD.git
 export OPENHD_BRANCH=master

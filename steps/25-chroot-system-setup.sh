@@ -4,6 +4,6 @@
 sed -i 's/gb/us/g' /etc/default/keyboard
 
 # Enable the services
-systemctl enable wifi_config
-systemctl enable wfb_bridge
-systemctl enable openhd
+# systemctl enable wifi_config
+# systemctl enable wfb_bridge
+# systemctl enable openhd
